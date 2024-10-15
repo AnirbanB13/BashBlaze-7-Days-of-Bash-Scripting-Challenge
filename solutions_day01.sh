@@ -30,3 +30,27 @@ sum=$(num1 + num2)
 # Print the result
 echo "The sum of $num1 and $num2 is: $sum"
 
+# Display the script name using $0
+echo "Script Name: $0"
+
+# Display the current process ID using $$
+echo "Process ID (PID) of this script: $$"
+
+# Display the number of arguments passed using $#
+echo "Number of arguments passed: $#"
+
+# Display the first argument (if provided) using $1
+if [ $# -ge 1 ]; then
+    echo "First argument: $1"
+else
+    echo "No arguments were provided."
+fi
+
+# Display the username of the person running the script using $USER
+echo "User running the script: $USER"
+
+# Display the current working directory using $PWD
+echo "Current working directory: $PWD"
+
+# Display the exit status of the last command using $?
+echo "Exit status of the last command: $?"
