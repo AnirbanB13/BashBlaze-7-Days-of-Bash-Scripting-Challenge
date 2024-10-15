@@ -25,20 +25,8 @@ echo "Enter the second number:"
 read num2
 
 # Calculate the sum
-sum=$((num1 + num2))
+sum=$(num1 + num2)
 
 # Print the result
 echo "The sum of $num1 and $num2 is: $sum"
 
-# Task 5: Bash provides such built-in variables which shows different types of information, a few are:
-
-echo "The name of the script: " $0
-echo "The process ID (PID) of the script itself : " $$
-echo "The number of arguments passed to the script: " $#
-echo "The first argument passed to the script." $1
-echo "The username of the person running the script: " $USER
-echo "The current working directory: " $PWD
-echo "The exit status of the last executed command" $?
-
-echo "All files end with .txt extension: "
-ls *.txt
